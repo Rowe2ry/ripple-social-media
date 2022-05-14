@@ -18,8 +18,8 @@ const thoughtSchema = new Schema(
 
 thoughtSchema.method('getDate', function() {
     const date = new Date(this.createdAt);
-    const formattedDate = `${date.getMonth()} ${date.getDay}, ${date.getFullYear()}`;
-    return formattedDate;
+    const formatted = `${date.getMonth()} ${date.getDay}, ${date.getFullYear()}`;
+    return formatted;
 });
 
 thoughtSchema.virtual('reactionCount', function() {
