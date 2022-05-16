@@ -4,7 +4,11 @@ const getThoughts = async (req,res) => {
     try{
         // view all Thoughts in database
         const allThoughts = await Thought.find();
-        res.status(200).json(allThoughts);
+        const formatted = allThoughts.map((thought) => {
+            thought.createdAt = thought.getDate();
+            return thought;
+        });
+        res.status(200).json(formatted);
     } catch(err) {
         res.status(400).json(err);
     };
@@ -16,7 +20,9 @@ const getOneThought = async (req,res) => {
         const oneThought = await Thought.findOne(
             { _id: req.params.thoughtId }
         );
-        res.status(200).json(oneThought);
+        const formatted = oneThought;
+        formatted.createdAt = formatted.getDate();
+        res.status(200).json(formatted);
     } catch(err) {
         res.status(400).json(err);
     };
