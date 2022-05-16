@@ -29,7 +29,7 @@ const getOneThought = async (req,res) => {
 };
 
 
-const addThought = (req,res) => {
+const addThought = async (req,res) => {
     try{
         // req.body incoming data should have the thoughtText and username
         const newThought = await Thought.create(req.body);

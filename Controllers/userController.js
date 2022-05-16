@@ -13,7 +13,9 @@ const getUsers = async (req,res) => {
 const getOneUser = async (req,res) => {
     try {
         // find by id on user model
-        const oneUser = await User.findOne( { _id: req.params.userId } );
+        const oneUser = await User.findOne( { _id: req.params.userId } )
+        .populate('thoughts')
+        .populate('friends');
         res.status(200).json(oneUser);
     } catch(err) {
         res.status(400).json(err);
