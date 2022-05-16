@@ -1,12 +1,6 @@
 # Ripple Social Media API  
-
-  
-
   ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
   ## Description  
-
-  
-
   An exercise in MongoDB, Express, Node, and the Mongoose npm package to create the back end for a social media type web service. This includes friendships, posts (thoughts), and comments (reactions).  
 
   * Motivation  
@@ -24,13 +18,7 @@
   * Things Learned  
 
     I learned that the Mongoose documentation is very well written and the tools are intuitive to use. Making the API routes without having to do much if any debugging proved how much I really did learn about using Mongoose to manage an entire database.  
-
-  
-
   ## Table of Contents  
-
-  
-
   * [Installation](#installation)  
 
   * [Usage](#usage)  
@@ -42,55 +30,18 @@
   * [Tests](#tests)  
 
   * [Questions](#questions)  
-
-  
-
-  ## Installation  
-
-  
-
+  ## Installation    
   This application is currently back end only, meaning you will need to launch it using node. Navigate to the root directory and enter the following 2 commang line prompts in order.  
-
-  
-
   > npm install  
-
-  
-
+  > node server.js
   ## Usage  
-
-  
-
   You can make get,post,put, and delete requests to the launched server from a developer tool such as Insomnia, or Postman.  
-
-  
-
+  See the [video walkthrough here](https://drive.google.com/file/d/1JwmSBuDUIFey-VQlCarcFYUnoxqnUajS/view)
   ## License  
-
-  
-
   [Apache 2.0](https://opensource.org/licenses/Apache-2.0)  
-
-  
-
   ## Contributing  
-
-  
-
   I'd like to thank 2U Education, Georgia Tech, Junhyoon, Andrew Ausley, James cooper, and my wife Merry for all of the support and tooling to get me to this point in my web development career.  
-
-  
-
   ## Tests  
-
-  
-
   Try testing all of the various routes in the routes folder following the JSON body formatting outlined in the models.  
-
-  
-
   ## Questions  
-
-  
-
   Reach out if you have any questions about this project.
